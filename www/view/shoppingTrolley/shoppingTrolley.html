@@ -1,0 +1,25 @@
+
+<ion-view view-title="我的购物车">
+	<ion-content>
+		<form name="buycarForm">
+		    <div class="bg-fff" id="buyCarList">
+				<car-list ng-repeat="item in carlist"></car-list>
+			</div>	
+		</form>
+	</ion-content>
+	<dl class="buyCar-nav of wrapper-fixed" style="bottom:2.4rem">
+		<dt class="fl" id="allchooseBtn">
+			<label class="checkbox checkbox-green buyCarAllchoose" ng-click="allChoosedFun()">
+				<input type="checkbox" ng-checked="allChosed">
+				全选
+			</label>
+		</dt>
+		<dd class="fr of">
+			<div class="fl p5 pl f12">
+				<p class="fc-ora2">合计：<span>{{allPrice | currency : '￥'}}</span></p>
+				<p class="tr fc-999">不含运费</p>
+			</div>
+			<a href="#/niubobo/confirmAndOrder"><div class="fl go-buy-btn">去结算(<span class="f11" ng-bind="allNum">5</span>)</div></a>
+		</dd>
+	</dl>
+</ion-view>

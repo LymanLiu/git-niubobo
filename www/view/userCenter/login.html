@@ -1,0 +1,19 @@
+<ion-view hide-tabs view-title="牛伯伯登录">
+	<ion-content>
+		<div class="list">
+            <label class="item item-input">
+                <span class="input-label">用户名</span>
+                <input type="text" placeholder="请输入用户名" ng-model="user.username">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">密码</span>
+                <input type="password" placeholder="请输入密码"  ng-model="user.password">
+            </label>
+        </div>
+        <div class="padding">
+            <button class="button button-block button-green" ng-click="signIn(user)">
+               登录
+            </button>
+        </div>
+	</ion-content>
+</ion-view>

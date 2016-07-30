@@ -1,0 +1,244 @@
+@charset "utf-8";
+/**
+* Description: Base style 
+* Developers: tianning <zuixinweilan@sina.com.cn>
+**/
+
+/*HTML5*/
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{ margin:0; padding:0; display:block }
+
+/*RESET
+-------------------------------------------------------------- */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, pre, code, form, button, fieldset, textarea, p, blockquote, th, td { margin: 0; padding: 0 }
+table { border-collapse: collapse; border-spacing: 0 }
+fieldset, img { border: 0; width: 100%; vertical-align: top;}
+address, caption, cite, code, dfn, em, strong, th, var, span { font-style: normal; font-weight: normal }
+ol, ul { list-style: none }
+del, ins { text-decoration: none }
+caption, th { text-align: left }
+input, button, textarea, select {border:none; outline: none; font:.65rem/1.5 '微软雅黑',YaHei,tahoma,arial,"Hiragino Sans GB",\5b8b\4f53}
+q:before, q:after { content: '' }
+addr, acronym { border: 0; font-variant: normal }
+sup, sub { vertical-align: baseline }
+body{ color:#333;}
+a{text-decoration:none; color: #666}
+/*CLEARFIX
+-------------------------------------------------------------- */
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden }
+* html .clearfix { height: 1% }
+.clearfix { display: block }
+.clear { clear:both;}
+/*FONT
+-------------------------------------------------------------- */
+body { font:.7rem/1.5 'Microsoft YaHei',YaHei,tahoma,arial,"Hiragino Sans GB",\5b8b\4f53 }
+.f10 { font-size: .5rem }
+.f11 { font-size: .55rem }
+.f12 { font-size: .6rem }
+.f13 { font-size: .65rem }
+.f14 { font-size: .7rem }
+.f15 { font-size: .75rem }
+.f16 { font-size: .8rem }
+.f18 { font-size: .9rem }
+.f20 { font-size: 1rem }
+.f22 { font-size: 1.1rem }
+.f24 { font-size: 1.2rem }
+.f28 { font-size: 1.4rem }
+.f30 { font-size: 1.5rem }
+.f32 { font-size: 1.6rem }
+.f35 { font-size: 1.75rem }
+.f40 { font-size: 2.0rem }
+.f46 { font-size: 2.3rem }
+.fb { font-weight: 700 }
+.fn { font-weight: 400 }
+.t0 { text-indent: 0 }
+.t1 { text-indent: 1em }
+.t2 { text-indent: 2em }
+.lh13 { line-height: 1.3 }
+.lh20 { line-height: 1.0rem }
+.lh22 { line-height: 1.1rem }
+.lh24 { line-height: 1.2rem }
+.lh28 { line-height: 1.4rem }
+.lh30 { line-height: 1.5rem }
+.lh35 { line-height: 1.75rem }
+.lh100 { line-height: 100% }
+.lh150 { line-height: 150% }
+.lh180 { line-height: 180% }
+.lh200 { line-height: 200% }
+.unl { text-decoration: underline }
+.no_unl { text-decoration: none }
+/*POSITION ZOOM
+-------------------------------------------------------------- */
+.tl { text-align: left }
+.tc { text-align: center }
+.tr { text-align: right }
+.bc { margin-left: auto; margin-right: auto }
+.fl { float: left; display: inline }
+.fr { float: right; display: inline }
+.vm { vertical-align: middle }
+.vt { vertical-align: top }
+.pr { position: relative }
+.pa { position: absolute }
+.abs-right { position: absolute; right: 0 }
+.abs-left { position: absolute; left: 0 }
+.hidden { visibility: hidden }
+.none { display: none }
+.of { overflow: hidden }
+.dis-line { display:inline }
+.dis-lib{ display: inline-block}
+.cf { zoom:1 }
+.cf:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0 }
+/*WIDTH / HEIGHT
+-------------------------------------------------------------- */
+.w10 { width:.5rem }
+.w20 { width:1rem }
+.w30 { width:1.5rem }
+.w40 { width:2rem }
+.w50 { width:2.5rem }
+.w60 { width:3rem }
+.w70 { width:3.5rem }
+.w80 { width:4rem }
+.w90 { width:4.5rem }
+.w100 { width:5rem }
+.w120 { width:6rem }
+.w130 { width:6.5rem }
+.w150 { width:7.5rem }
+.w180 { width:9rem }
+.w200 { width:10rem }
+.w250 { width:1.25rem }
+.w300 { width:15rem }
+.w400 { width:20rem }
+.w500 { width:25rem }
+.w600 { width:30rem }
+.w { width:100% }
+.h20 { height:1rem }
+.h30 { height:1.5rem }
+.h50 { height:2.5rem }
+.h80 { height:4rem }
+.h100 { height:5rem }
+.h200 { height:10rem }
+.h { height:100% }
+/*MARGIN / PADDING
+-------------------------------------------------------------- */
+.m5 { margin:  .25rem }
+.m10 { margin: 0.5rem }
+.m15 { margin: 0.75rem }
+.m20 { margin: 1.0rem }
+.m25 { margin: 1.25rem }
+.m30 { margin: 1.5rem }
+.m50 { margin: 2.5rem }
+.mt5 { margin-top:  .2rem }
+.mt10 { margin-top: 0.45rem  }
+.mt15 { margin-top: 0.7rem }
+.mt20 { margin-top: 1.0rem  }
+.mt25 { margin-top: 1.25rem }
+.mt30 { margin-top: 1.5rem  }
+.mt40 { margin-top: 2.0rem  }
+.mt50 { margin-top: 2.5rem }
+.mr5 { margin-right: .2rem  }
+.mr10 { margin-right:0.45rem  }
+.mr15 { margin-right:0.7rem }
+.mr20 { margin-right:1.0rem  }
+.mr25 { margin-right:1.25rem }
+.mr30 { margin-right:1.5rem  }
+.mr40 { margin-right:2.0rem  }
+.mr50 { margin-right:2.5rem  }
+.mb5 { margin-bottom: .25rem  }
+.mb10 { margin-bottom:0.45rem  }
+.mb15 { margin-bottom:0.75rem }
+.mb20 { margin-bottom:1.0rem  }
+.mb25 { margin-bottom:1.25rem }
+.mb30 { margin-bottom:1.5rem  }
+.mb40 { margin-bottom:2.0rem  }
+.mb50 { margin-bottom:2.5rem  }
+.ml5 { margin-left:  .2rem }
+.ml10 { margin-left: 0.45rem  }
+.ml15 { margin-left: 0.7rem }
+.ml20 { margin-left: 1.0rem  }
+.ml25 { margin-left: 1.25rem }
+.ml30 { margin-left: 1.5rem  }
+.ml40 { margin-left: 2.0rem  }
+.ml50 { margin-left: 2.5rem  }
+.p5 { padding:  .2rem  }
+.p10 { padding: 0.45rem  }
+.p15 { padding: 0.75rem }
+.p20 { padding: 1.0rem  }
+.p25 { padding: 1.25rem }
+.p30 { padding: 1.5rem  }
+.p40 { padding: 2.0rem  }
+.p50 { padding: 2.5rem  }
+.pt5 { padding-top:  .2rem  }
+.pt10 { padding-top: 0.45rem  }
+.pt15 { padding-top: 0.7rem }
+.pt20 { padding-top: .9rem  }
+.pt25 { padding-top: 1.25rem }
+.pt30 { padding-top: 1.5rem  }
+.pt40 { padding-top: 2.0rem  }
+.pt50 { padding-top: 2.5rem  }
+.pr5 { padding-right:  .24rem }
+.pr10 { padding-right: 0.4rem  }
+.pr15 { padding-right: 0.74rem }
+.pr20 { padding-right: 1.0rem  }
+.pr25 { padding-right: 1.25rem }
+.pr30 { padding-right: 1.5rem  }
+.pr40 { padding-right: 2.0rem  }
+.pr50 { padding-right: 2.5rem  }
+.pb5 { padding-bottom:  .24rem }
+.pb10 { padding-bottom: 0.4rem  }
+.pb15 { padding-bottom: 0.74rem }
+.pb20 { padding-bottom: 1.0rem  }
+.pb25 { padding-bottom: 1.25rem }
+.pb30 { padding-bottom: 1.5rem  }
+.pb40 { padding-bottom: 2.0rem  }
+.pb50 { padding-bottom: 2.5rem  }
+.pl5 { padding-left:  .25rem }
+.pl10 { padding-left: 0.5rem  }
+.pl15 { padding-left: 0.75rem }
+.pl20 { padding-left: 1.0rem  }
+.pl25 { padding-left: 1.25rem }
+.pl30 { padding-left: 1.5rem  }
+.pl40 { padding-left: 2.0rem  }
+.pl50 { padding-left: 2.5rem  }
+
+.chand { cursor:pointer }
+
+/*-------------------------------------------------------------- */
+/*-------------------------------------------------------------- */
+
+h3{font-weight: normal;}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+     -moz-appearance: textfield;
+    -webkit-appearance: none;
+     appearance: none;
+}
+
+.fc-green{ color: #00c74a;}
+.fc-fff{ color: #fff;}
+.fc-red{ color: #f93131;}
+.fc-666{ color: #666;}
+.fc-999{ color: #999;}
+.fc-ora{ color: #ff4e00;}
+.fc-ora2{ color: #ff8500;}
+.fc-blue{ color: #4996e6;}
+
+.body-bg{ background: #f8f8f8;}
+.bg-fb{ background: #fbfbfb;}
+.bg-fff{ background: #fff;}
+.bg-eee{ background: #eee;}
+
+.fl-impact{ font-family: Impact;}
+.fl-Arial{ font-family: Arial;}
+
+.bte5{ border-top: 1px solid #e5e5e5;}
+.bbe5{ border-bottom: 1px solid #e5e5e5;}
+
+.wrapper{
+	max-width: 16rem;
+	margin: 0 auto;
+}
+.wrapper-fixed{
+	left: 50% !important;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	max-width: 16rem;
+}

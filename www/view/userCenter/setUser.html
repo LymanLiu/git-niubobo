@@ -1,0 +1,50 @@
+<ion-view hide-tabs view-title="用户设置">
+	<ion-content>
+		<h4 class="setUer-title">个人资料</h4>
+		<ul class="setUser-box bte5">
+			<li>
+				<label class="fl lh60">头像</label>
+				<div class="fr uer-pic"></div>
+			</li>
+			<li ng-click="showPopup('name')">
+				<label class="fl">呢称</label>
+				<p class="fr fc-999" ng-bind="user.name">未设置</p>
+			</li>
+			<li ng-click="showPopup('email')">
+				<label class="fl">邮箱</label>
+				<p class="fr fc-999"  ng-bind="user.email">未绑定</p>
+			</li>
+			
+		</ul>
+
+		<h4 class="setUer-title">帐号安全</h4>
+		<ul class="setUser-box bte5">
+			<li ng-click="showPopup('phone')">
+				<label class="fl" >手机</label>
+				<p class="fr fc-999" ng-bind="user.phone">未绑定</p>
+			</li>
+			<li>
+				<label class="fl">密码</label>
+				<p class="fr fc-999"  ng-bind="user.password">未设置</p>
+			</li>
+		</ul>
+
+	<!-- 	<h4 class="setUer-title">登录方式</h4>
+		<ul class="setUser-box bte5">
+			<li>
+				<label class="fl">新浪微博</label>
+				<p class="fr fc-999">未绑定</p>
+			</li>
+			<li>
+				<label class="fl">微信</label>
+				<p class="fr fc-999">已启用</p>
+			</li>
+		</ul> -->
+		
+		<div class="mt20 p10">
+			<button  class="button button-block button-green" ng-click="logout()">
+	       退出登录
+	   	 	</button>
+		</div>
+	</ion-content>
+</ion-view>

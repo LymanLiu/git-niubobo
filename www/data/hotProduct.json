@@ -1,0 +1,49 @@
+{
+	"errno": 0,
+	"data" : [
+		{
+			"title"  	: "农家养殖小樱桃 一斤装",
+			"description": "无添加剂，自家种植少农药的，牛伯伯严格把控质检。",
+			"sumAmount" : "1000g",
+			"state"  	: "待付款",
+			"price"  	: 39,
+			"amount"	: 2,
+			"src"		: "1.jpg",
+			"href"		: "#/niubobo/productDeatil/yingtao",
+			"sales"		: 111
+		},
+		{
+			"title"  	: "百香果 一斤装",
+			"description": "无添加剂，自家种植少农药的，牛伯伯严格把控质检。",
+			"sumAmount" : "1000g",
+			"state"  	: "待付款",
+			"price"  	: 88,
+			"amount"	: 10,
+			"src"		: "1.jpg",
+			"href"		: "#/niubobo/productDeatil/baixiangguo",
+			"sales"		: 123
+		},
+		{
+			"title"  	: "农家鸡蛋 一斤装",
+			"description": "无添加剂，自家种植少农药的，牛伯伯严格把控质检。",
+			"sumAmount" : "1000g",
+			"state"  	: "待付款",
+			"price"  	: 8.8,
+			"amount"	: 22,
+			"src"		: "1.jpg",
+			"href"		: "#/niubobo/productDeatil/aggs",
+			"sales"		: 10
+		},
+		{
+			"title"  	: "极品贡莲 一斤装",
+			"description": "无添加剂，自家种植少农药的，牛伯伯严格把控质检。",
+			"sumAmount" : "1000g",
+			"state"  	: "待发货",
+			"price"  	: 139,
+			"amount"	: 2,
+			"src"		: "1.jpg",
+			"href"		: "#/niubobo/productDeatil/gonglian",
+			"sales"		: 1
+		}
+	]
+}

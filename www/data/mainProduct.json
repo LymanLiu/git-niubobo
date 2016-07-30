@@ -1,0 +1,23 @@
+{
+	"errno": 0,
+	"data" : [
+		 {
+			"mainId" 	 : 1,
+			"title"  	 : "法国葡萄",
+			"description": "七月新品好货不断",
+			"img"		 : "putao.png"
+		},
+		{
+			"mainId" 	 : 2,
+			"title"  	 : "百香果",
+			"description": "特色百香果",
+			"img"		 : "baixiangguo.png"		
+		},
+		{
+			"mainId" 	 : 3,
+			"title"  	 : "特色柑橘",
+			"description": "甜美想不到",
+			"img"		 : "otherfruit.png"	
+		}
+	]
+}

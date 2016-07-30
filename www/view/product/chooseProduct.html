@@ -1,0 +1,33 @@
+<section class="action-sheet-backdrop none">
+	<div class="goushop bg-fff" id="gouShop">
+		<dl class="shop-top bbe5 p10">
+			<dt></dt>
+			<dd>
+				<p class="f12" ng-model="porductName">农家养殖小樱桃 一斤装</p>
+				<p class="fc-ora2 f16 fl-Arial" ng-model="price">￥99</p>
+			</dd>
+		</dl>
+		<div class="p10">
+			<p class="f13 mb5">种类</p>
+			<ul class="of type-num-box">
+				<li class="cur">1斤装</li>
+				<li>2斤装</li>
+				<li>3斤装</li>
+			</ul>
+		</div>
+		<div class="p10 buyNum-box mt15 of">
+			<p class="f13 fl mr10 mb5">购买数量</p>
+			<div class="fl chooseNum">
+				<span class="jian" id="jian"></span>
+				<input type="number" value="1" min="1" id="shuliang">
+				<span class="jia" id="jia"></span>
+			</div>
+		</div>
+		<div class="mt15 p10">
+			<p class="f13 mb5">待定内容</p>
+		</div>
+		<div class="close-btn" id="closeBtn" ng-click="closePage()"></div>
+		<div class="footer-btn" id="sureBtn" ng-click="chooseSure()">确认</div>
+	</div>
+			
+</section>

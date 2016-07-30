@@ -1,0 +1,126 @@
+
+<ion-view view-title="牛伯伯商城">
+	<ion-content>
+	    <div class="p10">
+			<a class="search-box fc-999" href="#/niubobo/search">
+				搜索你感兴趣的商品吧！
+			</a>
+		</div>
+
+		<div class="home-slide">
+	        <ion-slide-box does-continue="true" auto-play="true" slide-interval="3000">
+	            <ion-slide>
+	                <img src="images/banner/i_banner-1.jpg">
+	            </ion-slide>
+	            <ion-slide>
+	                <img src="images/banner/i_banner-1.jpg">
+	            </ion-slide>
+	            <ion-slide>
+	                <img src="images/banner/i_banner-1.jpg">
+	            </ion-slide>
+
+	        </ion-slide-box>
+	    </div>
+		
+		<ul class="bottom-nav index-headerNav">
+			<li>
+				<a href="#/niubobo/typelist/hotbuy">
+					<i class="ico-i-hot"></i>
+					<p>热卖榜</p>
+				</a>
+			</li>
+			<li>
+				<a href="#/niubobo/classification">
+					<i class="ico-i-type"></i>
+					<p>商品分类</p>
+				</a>
+			</li>
+			<li>
+				<a href="#/niubobo/typelist/specialProdcut">
+					<i class="ico-i-tese"></i>
+					<p>特殊产品</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="ico-i-apply"></i>
+					<p>申请卖货</p>
+				</a>
+			</li>
+			<li>
+				<a href="#/niubobo/integralStore">
+					<i class="ico-i-jifen"></i>
+					<p>积分兑换</p>
+				</a>
+			</li>
+		</ul>
+		
+		<div class="mt10 mb10 bte5 bbe5 bg-fff of index-ad-box">
+			<a class="left-box" href="#/niubobo/productDeatil/putao">
+					<p class="p1" ng-bind="mainProductData[0].title"></p>
+					<p class="p2" ng-bind="mainProductData[0].description"></p>
+			</a>
+			<div class="right-box">
+				<a class="bbe5 top" href="#/niubobo/productDeatil/caye">
+					<p class="fc-green f15" ng-bind="mainProductData[1].title"></p>
+					<p class="fc-999 f10" ng-bind="mainProductData[2].description">特色茶叶特价</p>
+				</a>
+				<a class="bottom" href="#/niubobo/productDeatil/shicai">
+					<p class="fc-ora f15" ng-bind="mainProductData[2].title"></p>
+					<p class="fc-999 f10" ng-bind="mainProductData[2].description">想不到的食材</p>
+				</a>
+			</div>
+		</div>
+
+		<section>
+			<div class="bg-fff por-box of pb5">
+				<h4 class="i-title">热卖产品</h4>
+				<ion-scroll direction="x" scrollbar-x="false" on-scroll="onScroll()">
+					<!-- <div id="scrollX_1"> -->
+						<ul class="list-box" class="scroll">
+							<li ng-repeat="item in hotlist">
+								<a ng-href="{{item.href}}">
+									<img ng-src="images/pro-{{item.src}}" alt="">
+									<p class="f11 fb f12">{{item.title}}</p>
+									<p class="fc-ora2">{{item.price | currency : '￥'}}</p>
+								</a>
+							</li>
+						</ul>
+					<!-- </div> -->
+				</ion-scroll>
+			</div>
+				
+			<div class="banner-nav pr mt10 mb10">
+				<img class="breatheImg" src="images/banner/i_banner-1.jpg">
+				
+					<p class="title"><a class="fc-fff" href="#/niubobo/articleDetail">牛伯伯的理念</a></p>
+				
+			</div>
+		</section>
+
+		<section>
+			<div class="bg-fff por-box of pb5">
+				<h4 class="i-title">小编推荐</h4>
+				<ion-scroll direction="x" scrollbar-x="false" >
+					<div>
+						<ul class="list-box">
+							<li ng-repeat="item in hotlist">
+								<a ng-href="{{item.href}}">
+									<img ng-src="images/pro-{{item.src}}" alt="">
+									<p class="f11 fb f12">{{item.title}}</p>
+									<p class="fc-ora2">{{item.price | currency : '￥'}}</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</ion-scroll>
+			</div>
+				
+			<div class="banner-nav pr mt10 mb10">
+				<img src="images/banner/i_banner-1.jpg" class="breatheImg">
+				<p class="title"><a class="fc-fff" href="#/niubobo/articleDetail">健康安全把控</a></p>
+			</div>
+
+		</section>
+	</ion-content>
+</ion-view>

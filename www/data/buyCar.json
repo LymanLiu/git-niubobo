@@ -1,0 +1,30 @@
+{
+	"errno": 0,
+	"data" : [
+		{
+			"src"		:   "1.jpg",
+			"title"		: 	"农家养殖小樱桃 一斤装",
+			"amount"	: 	"1000g",
+			"price"		: 	39,
+			"value"		: 	1,
+			"checked"	:   true
+		},
+		{
+			"src"		:	"1.jpg",
+			"title"		:	"奇异果 一斤装",
+			"amount"	:	"1000g",
+			"price"		:	89,
+			"value"		:	2,
+			"checked"	:   false
+		},
+		{
+			"src"		:	"1.jpg",
+			"title"		:	"百香果 一斤装",
+			"amount"	:	"1000g",
+			"price"		:	99,
+			"value"		:	4,
+			"checked"	:   true
+		}
+
+	]
+}

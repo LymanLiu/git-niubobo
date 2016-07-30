@@ -1,0 +1,119 @@
+<ion-view view-title="商品详情">
+	<ion-nav-buttons side="left">
+        <button ng-click="$ionicGoBack()" class="button back-button buttons button-clear header-item">
+        	<i class="icon ion-ios-arrow-thin-left"></i> 
+        	<span class="back-text" style="-webkit-transform: translate3d(0px, 0px, 0px);">
+        		<span class="default-title hide">Back</span>
+        		<span class="previous-title"></span>
+       		</span>
+        </button>
+    </ion-nav-buttons>
+
+
+
+	<ion-content>
+		<div class="home-slide">
+	        <ion-slide-box does-continue="true" auto-play="true" slide-interval="3000">
+	            <ion-slide>
+	                <img src="images/pro-detil-1.jpg">
+	            </ion-slide>
+	            <ion-slide>
+	                <img src="images/pro-detil-1.jpg">
+	            </ion-slide>
+	            <ion-slide>
+	                <img src="images/pro-detil-1.jpg">
+	            </ion-slide>
+
+	        </ion-slide-box>
+	    </div>
+		
+		<div class="p10 bg-fff">
+			<h4 class="f13">农家养殖小樱桃 一斤装 买满300克送100克茶叶，24小时送货上门。</h4>
+
+			<p class="f12 fc-ora mb5 pt5 lh13 mt5">特卖会期间6月10号-6月30号特价甩卖，期间满200再
+	送30元代金券。</p>
+			
+			<p class="fc-ora2 fl-Arial">￥99元/斤 <span class="old-jiage">￥129元/斤</span></p>
+		</div>
+		<ul class="of sd-tip">
+			<li>质量把控</li>
+			<li>支持7天退换</li>
+			<li>无添加剂</li>
+		</ul>
+		
+		<div class="bg-fff p5 mt10 bte5 bbe5">
+			<h4 class="f13 tc pt5">图文详情</h4>
+			<div class="detail-content">
+				商家未提供详情图
+			</div>
+		</div>
+
+		<guess-like></guess-like>
+
+		<section class="layer-box none" id="layerBox">
+			<div class="goushop bg-fff" id="gouShop">
+				<dl class="shop-top bbe5 p10">
+					<dt></dt>
+					<dd>
+						<p class="f12">农家养殖小樱桃 一斤装</p>
+						<p class="fc-ora2 f16 fl-Arial">￥99</p>
+					</dd>
+				</dl>
+				<div class="p10">
+					<p class="f13 mb5">种类</p>
+					<ul class="of type-num-box">
+						<li class="cur">1斤装</li>
+						<li>2斤装</li>
+						<li>3斤装</li>
+					</ul>
+				</div>
+				<div class="p10 buyNum-box mt15 of">
+					<p class="f13 fl mr10 mb5">购买数量</p>
+					<div class="fl chooseNum">
+						<span class="jian" id="jian"></span>
+						<input type="number" value="1" min="1" id="shuliang">
+						<span class="jia" id="jia"></span>
+					</div>
+				</div>
+				<div class="mt15 p10">
+					<p class="f13 mb5">待定内容</p>
+				</div>
+				<div class="close-btn" id="closeBtn"></div>
+				<div class="add-adress-btn" id="sureBtn">确认</div>
+			</div>
+			
+		</section>
+		
+		<div class="h50 mt10"></div>
+	</ion-content>
+		<ul class="bottom-nav shopDetail-nav">
+			<li>
+				<a id="perService">
+					<i class="ico-kf"></i>
+					<p>客服</p>
+				</a>
+			</li>
+			<li id="joinCollect">
+				<a>
+					<i class="ico-sc"></i>
+					<p>收藏</p>
+				</a>
+			</li>
+			<li>
+				<a href="buyCar.html">
+					<i class="ico-car"></i>
+					<p>购物车</p>
+				</a>
+			</li>
+			<li class="join-car" ng-click="chooseProduct('joinCar')">
+				加入购物车
+			</li>
+			<li class="buy-btn"  ng-click="chooseProduct('buyProduct')">
+				立即购买
+			</li>
+
+		</ul>
+
+		<!-- 选择产品 -->
+		<choose-product></choose-product>
+</ion-view>
